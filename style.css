@@ -1,0 +1,212 @@
+/*
+
+# oznacz id, np. id="container" , jest unikatowy
+. oznacza class, np. class="container" , mozna wykorzystywac wielokrotnie
+
+*/
+
+body
+{
+    /*KOLOR:
+    Istnieje 17 nazw "standardowych": 
+    aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, 
+    purple, red, silver, teal, white, yellow oraz 123 dodatkowe (razem 140)
+    A "niestandardowych" w palecie RGB jest 16777216 mozliwych kolorow!
+    */
+    background-color: #404040;
+
+    /*CZCIONKI: 
+    Mozemy korzystac z trzech czcionek defaultowo : Times New Roman, Verdana i Arial
+    Ale to nie jedyne czcionki, z ktorych mozemy korzystac, zeby to zrobic nalezy: 
+    1. Wejsc na google.com/fonts 
+    2. Wybrac czcionki 
+    3. Skopiowac linki i wkleic do html, a potem do css, tutaj: 
+    Od teraz ten font bedzie w kazdym tekscie w dokumencie chyba, ze zmienimy na inny font w poszczegolnych pola*/
+    font-family: 'Lato', sans-serif;
+	
+}
+
+#container
+{
+    width: 1000px;
+    /* Teraz musimy wysrodkowac strone uzywajac margin-left i margin-right: */
+    margin-left: auto; /* to sprawi, ze przegladarka ustawi nam sama tego diva na srodku strony */
+    margin-right: auto; /* analogicznie ustawiamy to samo dla prawego marginesu */
+    
+}
+
+#logo
+{
+    color: white; /* Kolor czcionki */
+    
+    /*Teraz dodajemy margines, ale tylko z gory: */
+    margin-top: 20px; /* To wstawi nam 20px odstepu od gornej belki przegladarki 
+    /* Mamy takze do dyspozycji: margin-top, margin-bottom, margin-left, margin-right */
+    /* Mozemy takze ustawic margines dla wszystkich stron wpisujac samo "margin" */
+
+    /*Teraz zmieniamy wielkosc fonta napisu, ktory jest w "logo": */
+    font-size: 44px;
+    /* Mamy takze do dyskozycji inne wlasnicowsci fontow, miedzy innymi:display: display:
+    font-weight=grubosc(waga)czcionki, np 400,bold albo normal
+    font-style=styl(efekt)czcionki, np italic albo normal
+    i inne...
+    */
+
+    /*Teraz zrobimy bardziej rozstrzelone litery, tak zeby nie przylegaly do siebie:*/
+    letter-spacing: 3px; /* Odstep pomiedzy literami u nas wyniesie 3px */
+
+    /*Tu wytluszczamy font: */
+    font-weight: 900; /*sciaglismy czcionke Lato 400 i Lato 900 z google/fonts */
+	
+}
+
+#menu
+{
+    background-color: #303030; 
+    /*Kolor zapisany w sytemie szestnastkowym(hexadecymalnym) :
+    0 1 2 3 4 5 6 7 8 9 A=10 B=11 C=12 D=13 E=14 F=15
+    Wezmy na przyklad #304050:
+    Pierwsze 2 liczby (tutaj 30) to red, kolejne 2 liczby (tutaj 40) to green,
+    a ostatnie 2 liczby (tutaj 50) to blue. Z polaczenia tych kolorow mozemy uzyskac
+    kazdy mozliwy kolor w komputrze. 
+    */
+	margin-top:20px;
+	color:#ffffff;
+	padding:10px;
+	
+	
+}
+
+#topbar /* zawiera cytat */
+{
+    background-color: #128870;
+	color:white;
+	padding:10px;
+	margin-top:20px; /* Odstep od gory */
+	margin-bottom:25px;
+	height:170px;
+	
+}
+
+#topbarL /* obraz pingwina */ 
+{
+	float:left;
+	padding:20px;
+	width:138px;
+	text-align:center;
+	border-right:2px dotted #cccccc;
+}
+
+#topbarR /* text */
+{
+	float:left;
+	padding:20px;
+	width:760px; /* musimy dodac wszystkie wartosci topbarow i zobaczyc ile brakuje do 1000px , tyle: 760px*/
+	font-size: 16px;
+	text-align: justify;
+}
+
+#sidebar
+{
+    float:left;
+	width:148px;
+	min-height:620px;
+	padding:20px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 18px;
+	border-right: 2px dotted #666666;
+    
+}
+
+#content
+{
+    float:left;
+	padding: 40px;
+	width:730px; /*Nalezy policzyc szerokosc sidebara i jego paddingu(270px) i odjac ja od szerokosci strony(1000px) = 730px */
+    background-color: #dedede;
+	min-height:580px;
+	text-align: justify; /* wyjustowanie tekstu */
+}
+
+#content p {
+    line-height: 1.6;
+}
+
+#content h2 {
+    color: #128870;
+    margin-bottom: 10px;
+}
+
+#content div p {
+    white-space: pre-line;
+}
+
+#footer
+{
+    clear:both;
+	color:white;
+	text-align:center;
+	padding:20px;
+	font-size:18px;
+}
+
+.bigtitle
+{
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	
+	/* <span> Ktorego uzylismy w pliku index.html slyzy do zgrupowania elementow (tekstu, obrazkow) zazwyczaj w celu przypisania im okreslonego stylu CSS. Nie jest to element blokowy, chyba ze uzyjemy zapisu CSS: display: block;  */
+}
+
+.podstrona
+{
+    float: left;
+	min-width: 50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px dotted #444444;  /*cechy bordera: 2px grubosc, styl linii: dotted(kropkowana), kolor linii: #444444   */
+	opacity:0.8; /* Oznacza nieprzezroczystosc elementu w 80%, czyli jest on przezroczysty w 20% */
+	
+	
+}
+
+.podstrona:hover
+{
+	background-color: #000000;
+	cursor: pointer; /* Zmiana kursora myszki na pointer (reka ze wzkazujacym palcem */
+}
+
+.podstronaL
+{
+	font-size: 18px;
+	height: 25px;
+	padding:10px;
+	border-bottom:2px dotted #444444;
+}
+
+.podstronaL:hover
+{
+	background-color: #f36742;
+	color:white;
+	cursor: pointer;  
+}
+
+.podstrona a, .podstronaL a {
+    color: white;
+    text-decoration: none;
+}
+
+.podstrona a:hover, .podstronaL a:hover {
+    color: white; /* Changed from #f36742 to white to ensure text visibility */
+}
+
+.dottedline
+{
+	height: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-bottom:2px dotted #444444;
+}
