@@ -53,16 +53,16 @@ _An HTML-based educational website dedicated to the Linux operating system, cove
 _Screenshots of: the website's homepage featuring the top bar with logo and quote, the navigation menu, the sidebar, the main content area (even with placeholder text), and the footer._
 
 <p align="center">
-  <img src="screenshots\1.jpg" width="300"/>
-  <img src="screenshots\2.jpg" width="300"/>
-  <img src="screenshots\3.jpg" width="300"/>
-  <img src="screenshots\4.jpg" width="300"/>
-  <img src="screenshots\5.jpg" width="300"/>
-  <img src="screenshots\6.jpg" width="300"/>
-  <img src="screenshots\7.jpg" width="300"/>
-  <img src="screenshots\8.jpg" width="300"/>
-  <img src="screenshots\9.jpg" width="300"/>
-  <img src="screenshots\10jpg" width="300"/>
+  <img src="screenshots\Image1.jpg" width="300"/>
+  <img src="screenshots\Image2.jpg" width="300"/>
+  <img src="screenshots\Image3.jpg" width="300"/>
+  <img src="screenshots\Image4.jpg" width="300"/>
+  <img src="screenshots\Image5.jpg" width="300"/>
+  <img src="screenshots\Image6.jpg" width="300"/>
+  <img src="screenshots\Image7.jpg" width="300"/>
+  <img src="screenshots\Image8.jpg" width="300"/>
+  <img src="screenshots\Image9.jpg" width="300"/>
+  <img src="screenshots\Image10jpg" width="300"/>
 </p>
 
 
