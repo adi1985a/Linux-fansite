@@ -1,4 +1,4 @@
-# 🐧💻 Learn Linux :) : An Educational HTML Website 🎓
+# 🐧💻 Learn Linux : An Educational HTML Website 🎓
 _An HTML-based educational website dedicated to the Linux operating system, covering distributions, installation, commands, and Linus Torvalds, with custom styling and Google Fonts._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -62,7 +62,7 @@ _Screenshots of: the website's homepage featuring the top bar with logo and quot
   <img src="screenshots\Image7.jpg" width="300"/>
   <img src="screenshots\Image8.jpg" width="300"/>
   <img src="screenshots\Image9.jpg" width="300"/>
-  <img src="screenshots\Image10jpg" width="300"/>
+  <img src="screenshots\Image10.jpg" width="300"/>
 </p>
 
 
