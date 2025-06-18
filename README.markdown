@@ -23,6 +23,12 @@ _An HTML-based educational website dedicated to the Linux operating system, cove
 
 **Learn Linux :)** is a static educational website built with HTML and CSS, designed to provide information about the Linux operating system. The site structure includes a top navigation menu and a corresponding left sidebar, offering access to sections on Linux Distributions, Installation, common Commands, and information about Linus Torvalds. It features a "top bar" area with a Linux logo and an introductory quote from Linus Torvalds. The main content area currently holds placeholder text. Styling is managed by a custom `style.css` and typography is enhanced with the Google Font "Lato". The project aims to be a beginner-friendly resource for those looking to learn about Linux.
 
+<br><br>
+<p align="center">
+  <img src="screenshots/1.gif" width="85%">
+</p>
+
+
 ## ✨ Key Features
 
 *   🧭 **Dual Navigation System**:
@@ -44,9 +50,21 @@ _An HTML-based educational website dedicated to the Linux operating system, cove
 
 ## 🖼️ Screenshots (Conceptual)
 
-**Coming soon!**
+_Screenshots of: the website's homepage featuring the top bar with logo and quote, the navigation menu, the sidebar, the main content area (even with placeholder text), and the footer._
 
-_This section would ideally show screenshots of: the website's homepage featuring the top bar with logo and quote, the navigation menu, the sidebar, the main content area (even with placeholder text), and the footer._
+<p align="center">
+  <img src="screenshots\Image1.jpg" width="300"/>
+  <img src="screenshots\Image2.jpg" width="300"/>
+  <img src="screenshots\Image3.jpg" width="300"/>
+  <img src="screenshots\Image4.jpg" width="300"/>
+  <img src="screenshots\Image5.jpg" width="300"/>
+  <img src="screenshots\Image6.jpg" width="300"/>
+  <img src="screenshots\Image7.jpg" width="300"/>
+  <img src="screenshots\Image8.jpg" width="300"/>
+  <img src="screenshots\Image9.jpg" width="300"/>
+  <img src="screenshots\Image10jpg" width="300"/>
+</p>
+
 
 ## 🛠️ Technical Stack & Requirements
 
