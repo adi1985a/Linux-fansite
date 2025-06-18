@@ -13,7 +13,7 @@ body
     purple, red, silver, teal, white, yellow oraz 123 dodatkowe (razem 140)
     A "niestandardowych" w palecie RGB jest 16777216 mozliwych kolorow!
     */
-    background-color: #404040;
+    background-color: #f5f5f5;
 
     /*CZCIONKI: 
     Mozemy korzystac z trzech czcionek defaultowo : Times New Roman, Verdana i Arial
@@ -23,190 +23,397 @@ body
     3. Skopiowac linki i wkleic do html, a potem do css, tutaj: 
     Od teraz ten font bedzie w kazdym tekscie w dokumencie chyba, ze zmienimy na inny font w poszczegolnych pola*/
     font-family: 'Lato', sans-serif;
-	
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 #container
 {
-    width: 1000px;
-    /* Teraz musimy wysrodkowac strone uzywajac margin-left i margin-right: */
-    margin-left: auto; /* to sprawi, ze przegladarka ustawi nam sama tego diva na srodku strony */
-    margin-right: auto; /* analogicznie ustawiamy to samo dla prawego marginesu */
-    
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: white;
 }
 
 #logo
 {
-    color: white; /* Kolor czcionki */
-    
-    /*Teraz dodajemy margines, ale tylko z gory: */
-    margin-top: 20px; /* To wstawi nam 20px odstepu od gornej belki przegladarki 
-    /* Mamy takze do dyspozycji: margin-top, margin-bottom, margin-left, margin-right */
-    /* Mozemy takze ustawic margines dla wszystkich stron wpisujac samo "margin" */
-
-    /*Teraz zmieniamy wielkosc fonta napisu, ktory jest w "logo": */
+    color: #128870;
+    margin: 20px;
     font-size: 44px;
-    /* Mamy takze do dyskozycji inne wlasnicowsci fontow, miedzy innymi:display: display:
-    font-weight=grubosc(waga)czcionki, np 400,bold albo normal
-    font-style=styl(efekt)czcionki, np italic albo normal
-    i inne...
-    */
+    letter-spacing: 3px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #128870, #1abc9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
 
-    /*Teraz zrobimy bardziej rozstrzelone litery, tak zeby nie przylegaly do siebie:*/
-    letter-spacing: 3px; /* Odstep pomiedzy literami u nas wyniesie 3px */
-
-    /*Tu wytluszczamy font: */
-    font-weight: 900; /*sciaglismy czcionke Lato 400 i Lato 900 z google/fonts */
-	
+#logo:hover
+{
+    transform: scale(1.05);
 }
 
 #menu
 {
-    background-color: #303030; 
-    /*Kolor zapisany w sytemie szestnastkowym(hexadecymalnym) :
-    0 1 2 3 4 5 6 7 8 9 A=10 B=11 C=12 D=13 E=14 F=15
-    Wezmy na przyklad #304050:
-    Pierwsze 2 liczby (tutaj 30) to red, kolejne 2 liczby (tutaj 40) to green,
-    a ostatnie 2 liczby (tutaj 50) to blue. Z polaczenia tych kolorow mozemy uzyskac
-    kazdy mozliwy kolor w komputrze. 
-    */
-	margin-top:20px;
-	color:#ffffff;
-	padding:10px;
-	
-	
+    background: linear-gradient(to right, #128870, #1abc9c);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #topbar /* zawiera cytat */
 {
-    background-color: #128870;
-	color:white;
-	padding:10px;
-	margin-top:20px; /* Odstep od gory */
-	margin-bottom:25px;
-	height:170px;
-	
+    background: linear-gradient(45deg, #128870, #1abc9c);
+    color: white;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#topbarR .bigtitle {
+    color: #fff !important;
 }
 
 #topbarL /* obraz pingwina */ 
 {
-	float:left;
-	padding:20px;
-	width:138px;
-	text-align:center;
-	border-right:2px dotted #cccccc;
+    float: none;
+    padding: 0;
+    width: auto;
+    border: none;
+}
+
+#topbarL img
+{
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+#topbarL img:hover
+{
+    transform: rotate(10deg);
 }
 
 #topbarR /* text */
 {
-	float:left;
-	padding:20px;
-	width:760px; /* musimy dodac wszystkie wartosci topbarow i zobaczyc ile brakuje do 1000px , tyle: 760px*/
-	font-size: 16px;
-	text-align: justify;
+    float: none;
+    padding: 0;
+    width: auto;
+    flex: 1;
 }
 
 #sidebar
 {
-    float:left;
-	width:148px;
-	min-height:620px;
-	padding:20px;
-	background-color: lightgray;
-	text-align: center;
-	font-size: 18px;
-	border-right: 2px dotted #666666;
-    
+    float: left;
+    width: 200px;
+    min-height: 620px;
+    padding: 20px;
+    background: #fff !important;
+    border-right: 1px solid #128870 !important;
+    text-align: left;
+    font-size: 16px;
 }
 
 #content
 {
-    float:left;
-	padding: 40px;
-	width:730px; /*Nalezy policzyc szerokosc sidebara i jego paddingu(270px) i odjac ja od szerokosci strony(1000px) = 730px */
-    background-color: #dedede;
-	min-height:580px;
-	text-align: justify; /* wyjustowanie tekstu */
+    float: left;
+    padding: 40px;
+    width: 760px;
+    background-color: white;
+    min-height: 580px;
+    text-align: justify;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
 }
 
-#content p {
-    line-height: 1.6;
-}
-
-#content h2 {
+#content h2
+{
     color: #128870;
-    margin-bottom: 10px;
+    margin: 25px 0 15px;
+    font-size: 24px;
+    position: relative;
+    padding-left: 30px;
 }
 
-#content div p {
-    white-space: pre-line;
+#content h2::before {
+    content: '';
+}
+
+#content p
+{
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 #footer
 {
-    clear:both;
-	color:white;
-	text-align:center;
-	padding:20px;
-	font-size:18px;
+    clear: both;
+    background: linear-gradient(45deg, #128870, #1abc9c);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
 }
 
 .bigtitle
 {
-	font-size: 32px;
-	font-weight: 900;
-	letter-spacing: 2px;
-	
-	/* <span> Ktorego uzylismy w pliku index.html slyzy do zgrupowania elementow (tekstu, obrazkow) zazwyczaj w celu przypisania im okreslonego stylu CSS. Nie jest to element blokowy, chyba ze uzyjemy zapisu CSS: display: block;  */
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #128870;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
 }
 
-.podstrona
+.bigtitle::after
 {
-    float: left;
-	min-width: 50px;
-	height: 25px;
-	font-size: 18px;
-	padding: 10px;
-	border-right: 2px dotted #444444;  /*cechy bordera: 2px grubosc, styl linii: dotted(kropkowana), kolor linii: #444444   */
-	opacity:0.8; /* Oznacza nieprzezroczystosc elementu w 80%, czyli jest on przezroczysty w 20% */
-	
-	
-}
-
-.podstrona:hover
-{
-	background-color: #000000;
-	cursor: pointer; /* Zmiana kursora myszki na pointer (reka ze wzkazujacym palcem */
-}
-
-.podstronaL
-{
-	font-size: 18px;
-	height: 25px;
-	padding:10px;
-	border-bottom:2px dotted #444444;
-}
-
-.podstronaL:hover
-{
-	background-color: #f36742;
-	color:white;
-	cursor: pointer;  
-}
-
-.podstrona a, .podstronaL a {
-    color: white;
-    text-decoration: none;
-}
-
-.podstrona a:hover, .podstronaL a:hover {
-    color: white; /* Changed from #f36742 to white to ensure text visibility */
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #128870, #1abc9c);
 }
 
 .dottedline
 {
-	height: 5px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	border-bottom:2px dotted #444444;
+    height: 1px;
+    margin: 30px 0;
+    background: linear-gradient(to right, #128870, transparent);
+}
+
+.podstrona
+{
+    float: none;
+    padding: 15px 25px;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.podstrona::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.podstrona:hover::after
+{
+    width: 80%;
+}
+
+.podstrona a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.podstronaL
+{
+    font-size: 16px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    color: #128870 !important;
+    background: transparent !important;
+}
+
+.podstronaL a
+{
+    color: #128870 !important;
+    text-decoration: none;
+}
+
+.podstronaL i
+{
+    color: #128870 !important;
+}
+
+.podstronaL:hover
+{
+    background-color: #128870 !important;
+    color: #fff !important;
+    transform: translateX(5px);
+}
+
+.podstronaL:hover a,
+.podstronaL:hover i
+{
+    color: #fff !important;
+}
+
+.card
+{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+}
+
+.icon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #128870, #1abc9c);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover
+{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.command-section
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.command-card
+{
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #128870;
+}
+
+.command-card h3
+{
+    color: #128870;
+    margin-top: 0;
+}
+
+#content .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+#content .card h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#content .card p,
+#content .card ul,
+#content .card ol {
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#content .card img {
+    display: block;
+    margin: 10px auto;
+}
+
+#content .card h2 {
+    color: #128870;
+    margin: 15px 0 15px;
+    font-size: 24px;
+    position: relative;
+    padding-left: 0;
+    text-align: center;
+}
+
+#content .card .button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+/* Installation page only: left-align h2 in cards */
+body[title~="Linux Installation Guide"] #content .card h2 {
+    text-align: left !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media (max-width: 1200px)
+{
+    #container
+    {
+        width: 100%;
+    }
+    
+    #content
+    {
+        width: calc(100% - 240px);
+    }
+}
+
+@media (max-width: 768px)
+{
+    #sidebar
+    {
+        width: 100%;
+        float: none;
+        min-height: auto;
+    }
+    
+    #content
+    {
+        width: 100%;
+        float: none;
+    }
+    
+    #menu
+    {
+        flex-direction: column;
+    }
+    
+    .podstrona
+    {
+        text-align: center;
+    }
 }

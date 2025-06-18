@@ -8,17 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="container">
-        <div id="logo">Learn Linux :)</div>
+        <div id="logo">
+            <i class="fab fa-linux"></i> Learn Linux :)
+        </div>
         
         <div id="menu">
-            <div class="podstrona"><a href="index.html">Home</a></div>    
-            <div class="podstrona"><a href="distribution.html">Distributions</a></div> 
-            <div class="podstrona"><a href="installation.html">Installation</a></div> 
-            <div class="podstrona"><a href="commands.html">Commands</a></div> 
-            <div class="podstrona"><a href="torvalds.html">Linus Torvalds</a></div>
+            <div class="podstrona"><a href="index.html"><i class="fas fa-home"></i> Home</a></div>    
+            <div class="podstrona"><a href="distribution.html"><i class="fas fa-server"></i> Distributions</a></div> 
+            <div class="podstrona"><a href="installation.html"><i class="fas fa-download"></i> Installation</a></div> 
+            <div class="podstrona"><a href="commands.html"><i class="fas fa-terminal"></i> Commands</a></div> 
+            <div class="podstrona"><a href="torvalds.html"><i class="fas fa-user"></i> Linus Torvalds</a></div>
             <div style="clear:both;"></div>
         </div>
 
@@ -29,38 +32,54 @@
             <div id="topbarR">
                 <span class="bigtitle">Popular Linux Distributions</span>
                 <div style="height:15px;"></div>
-                Learn about the most important Linux distributions. From beginner-friendly Ubuntu, through stable Debian, to advanced Arch Linux.
+                Discover the most important Linux distributions. From beginner-friendly Ubuntu, through stable Debian, to advanced Arch Linux. Each distribution has its own strengths and use cases.
             </div>
             <div style="clear:both;"></div>
         </div>
 
         <div id="sidebar">
-            <div class="podstronaL"><a href="index.html">Home</a></div>    
-            <div class="podstronaL"><a href="distribution.html">Distributions</a></div>
-            <div class="podstronaL"><a href="installation.html">Installation</a></div>
-            <div class="podstronaL"><a href="commands.html">Commands</a></div>
-            <div class="podstronaL"><a href="torvalds.html">Linus Torvalds</a></div>
+            <div class="podstronaL"><a href="index.html"><i class="fas fa-home"></i> Home</a></div>    
+            <div class="podstronaL"><a href="distribution.html"><i class="fas fa-server"></i> Distributions</a></div>
+            <div class="podstronaL"><a href="installation.html"><i class="fas fa-download"></i> Installation</a></div>
+            <div class="podstronaL"><a href="commands.html"><i class="fas fa-terminal"></i> Commands</a></div>
+            <div class="podstronaL"><a href="torvalds.html"><i class="fas fa-user"></i> Linus Torvalds</a></div>
         </div>
 
         <div id="content">
             <span class="bigtitle">Popular Distributions</span>
             <div class="dottedline"></div>
             
-            <h2>Ubuntu</h2>
-            <p>The most popular distribution for beginners. Offers a user-friendly graphical environment and great community support.</p>
+            <div class="card">
+                <img src="images/ubuntu.png" alt="Ubuntu logo" style="max-width: 100px; margin: 10px 0;">
+                <h2>Ubuntu</h2>
+                <p>The most popular distribution for beginners. Offers a user-friendly graphical environment and great community support. Perfect for those who are new to Linux or want a stable, well-supported system.</p>
+                <a href="https://ubuntu.com" class="button" target="_blank">Visit Ubuntu</a>
+            </div>
 
-            <h2>Debian</h2>
-            <p>A stable distribution that many other systems are based on, including Ubuntu. Known for reliability and security.</p>
+            <div class="card">
+                <img src="images/debian.png" alt="Debian logo" style="max-width: 100px; margin: 10px 0;">
+                <h2>Debian</h2>
+                <p>A stable distribution that many other systems are based on, including Ubuntu. Known for reliability and security. Ideal for servers and systems where stability is crucial.</p>
+                <a href="https://debian.org" class="button" target="_blank">Visit Debian</a>
+            </div>
 
-            <h2>Fedora</h2>
-            <p>An innovative distribution sponsored by Red Hat. Always offers the latest technologies and solutions.</p>
+            <div class="card">
+                <img src="images/fedora.png" alt="Fedora logo" style="max-width: 100px; margin: 10px 0;">
+                <h2>Fedora</h2>
+                <p>An innovative distribution sponsored by Red Hat. Always offers the latest technologies and solutions. Great for developers and those who want to stay on the cutting edge.</p>
+                <a href="https://fedoraproject.org" class="button" target="_blank">Visit Fedora</a>
+            </div>
 
-            <h2>Linux Mint</h2>
-            <p>A user-friendly distribution based on Ubuntu, offering a traditional user interface.</p>
+            <div class="card">
+                <img src="images/mint.png" alt="Linux Mint logo" style="max-width: 100px; margin: 10px 0;">
+                <h2>Linux Mint</h2>
+                <p>A user-friendly distribution based on Ubuntu, offering a traditional user interface. Perfect for Windows users transitioning to Linux, with a familiar desktop environment.</p>
+                <a href="https://linuxmint.com" class="button" target="_blank">Visit Linux Mint</a>
+            </div>
         </div>
 
         <div id="footer">
-            Learn Linux - the best free operating system. 
+            <i class="fab fa-linux"></i> Learn Linux - the best free operating system. 
             Online since 2014 &copy; All rights reserved
         </div>
     </div>
